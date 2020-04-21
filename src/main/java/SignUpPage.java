@@ -6,4 +6,6 @@ public class SignUpPage {
     public SignUpPage(WebDriver driver) {
         this.driver = driver;
     }
+
+
 }

@@ -10,8 +10,8 @@ public class MainClass {
         driver=new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("https://github.com/");
-        MainPage mp=new MainPage(driver);
-        mp.UseSearch("plavnik");
+        driver.get("https://github.com/login");
+        SignInPage mp=new SignInPage(driver);
+        mp.incorrectSignIn("petut", "petut");
     }
 }
